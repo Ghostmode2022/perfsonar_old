@@ -1,1 +1,2 @@
 sudo apt install curl
+easy_install sls-client
