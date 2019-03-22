@@ -1,2 +1,4 @@
 sudo apt install curl
 easy_install sls-client
+esmond API Reference - http://docs.perfsonar.net/esmond_api_rest.html
+
