@@ -1,4 +1,5 @@
 sudo apt install curl
 easy_install sls-client
 esmond API Reference - http://docs.perfsonar.net/esmond_api_rest.html
-
+throughput - an average of data packets per second - bits/s.
+event types - "packet-retransmits", "throughput", "failures", "throughput-subintervals"
