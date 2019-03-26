@@ -3,3 +3,14 @@ easy_install sls-client
 esmond API Reference - http://docs.perfsonar.net/esmond_api_rest.html
 throughput - an average of data packets per second - bits/s.
 event types - "packet-retransmits", "throughput", "failures", "throughput-subintervals"
+the "archive.example.net" is said to be measurement agent which can be the source, destination or a third-party host depending on the tool(event type)
+BWCTL - Bandwidth Test Controller
+Querying Throughput
+Querying Delay/One-way Delay
+Querying Packet Loss
+Querying Packet Traces
+Querying Subinterval Data
+Question: What is the alphaneumeric data present in the base uri
+          I did not get any json file after quering with a curl statement. Please let me know if I am wrong in any way. 
+Start reading from "searching by event type"
+          
