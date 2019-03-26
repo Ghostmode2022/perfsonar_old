@@ -10,7 +10,23 @@ Querying Delay/One-way Delay
 Querying Packet Loss
 Querying Packet Traces
 Querying Subinterval Data
-Question: What is the alphaneumeric data present in the base uri
-          I did not get any json file after quering with a curl statement. Please let me know if I am wrong in any way. 
-Start reading from "searching by event type"
-          
+Question: What is the alphaneumeric data present in the base uri?
+          I did not get any json file after quering with a curl statement. Please let me know if I am wrong in any way.
+What is the difference between base data and summary data? - http://docs.perfsonar.net/esmond_api_rest.html#psclient-rest-basevsumm
+base data - exactly what is written to the archive when the measurement is performed, the server does not transform it in anyway
+summarized data - data that was transformed in some way by the server. All summarized data has a summary type and summary window. The summary window is the timeframe in seconds described by the summary. A summary window of 0 means it is a direct transformation of the base data (i.e. there should be a one-to-one mapping in the number of base data points and summary data points). The summary type must be one of the following:
+aggregation - The data was combined in a context specific way. For example, if the underlying type is numeric it is the sum of all data points in the summary window. If its a histogram it is a union of the two histograms.
+average - The statistical average of a series of numbers
+statistics - Currently only applies to the histogram type, but contains common statistical measures of data over the summary window such as minimum, maximum, mean and median.
+
+http://docs.perfsonar.net/esmond_api_rest.html#querying-delay-one-way-delay
+Delay tests can run rather frequently thus it can be very useful to use summarized data. Aggregation summaries combine all the histograms in a given time window.
+
+Need to run the following queries
+          curl http://archive.example.net/esmond/perfsonar/archive/?event-type=throughput&source=host1.example.net&destination=host2.example.net
+          curl http://archive.example.net/esmond/perfsonar/archive/f6b732e9f351487a96126f0c25e5e546/throughput/base?time-range=86400
+          curl "http://archive.example.net/esmond/perfsonar/archive/2355e337a7214611ab1bc5db51e40424/histogram-rtt/base?time-range=86400"
+          curl "http://archive.example.net/esmond/perfsonar/archive/fce0483e51de49aaa7fcf8884d053134/histogram-owdelay/base?time-range=86400"
+          curl "http://archive.example.net/esmond/perfsonar/archive/fce0483e51de49aaa7fcf8884d053134/packet-loss-rate/base" - It is represented as a floating point number between 0 and 1 where 0 equals 0% packet loss and 1 equals 100% packet loss. - http://docs.perfsonar.net/esmond_api_rest.html#querying-packet-loss
+          The results of a traceroute or tracepath measurement are stored under the packet-trace event type. The result is an array of objects describing the result of each traceroute or tracepath probe - curl http://archive.example.net/esmond/perfsonar/archive/641860b2004c46a7b21fe26e5ffea9af/packet-trace/base?time-range=600 - http://docs.perfsonar.net/esmond_api_rest.html#querying-packet-traces
+          Data such as throughput and packet retransmits is also available for subintervals of an individual test. No summarizations are avilable for this data type - http://docs.perfsonar.net/esmond_api_rest.html#querying-subinterval-data
