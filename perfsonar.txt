@@ -30,3 +30,5 @@ Need to run the following queries
           curl "http://archive.example.net/esmond/perfsonar/archive/fce0483e51de49aaa7fcf8884d053134/packet-loss-rate/base" - It is represented as a floating point number between 0 and 1 where 0 equals 0% packet loss and 1 equals 100% packet loss. - http://docs.perfsonar.net/esmond_api_rest.html#querying-packet-loss
           The results of a traceroute or tracepath measurement are stored under the packet-trace event type. The result is an array of objects describing the result of each traceroute or tracepath probe - curl http://archive.example.net/esmond/perfsonar/archive/641860b2004c46a7b21fe26e5ffea9af/packet-trace/base?time-range=600 - http://docs.perfsonar.net/esmond_api_rest.html#querying-packet-traces
           Data such as throughput and packet retransmits is also available for subintervals of an individual test. No summarizations are avilable for this data type - http://docs.perfsonar.net/esmond_api_rest.html#querying-subinterval-data
+          
+Static List of all the hosts associated with perfsonar - https://fasterdata.es.net/performance-testing/perfsonar/esnet-perfsonar-services/esnet-owamp-hosts/
