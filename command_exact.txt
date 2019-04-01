@@ -1,0 +1,49 @@
+curl http://archive.example.net/esmond/perfsonar/archive/f6b732e9f351487a96126f0c25e5e546/throughput/base?time-range=86400
+
+#Listing all the measurements
+curl "http://archive.example.net/esmond/perfsonar/archive/"
+
+#Searching by Endpoint
+.
+.
+.
+.
+.
+
+#Searching by Event Type
+curl "http://archive.example.net/esmond/perfsonar/archive/?event-type=throughput"
+curl "http://archive.example.net/esmond/perfsonar/archive/?event-type=histogram-owdelay&summary-type=statistics&summary-window=86400"
+
+#Searching by most recent result time
+.
+.
+.
+.
+.
+
+#Limiting results returned
+.
+.
+.
+
+#Retrieving time series data
+.
+.
+
+#Querying Throughput
+curl "http://archive.example.net/esmond/perfsonar/archive/f6b732e9f351487a96126f0c25e5e546/throughput/base?time-range=86400"
+
+#Querying Delay/One-way Delay
+curl "http://archive.example.net/esmond/perfsonar/archive/2355e337a7214611ab1bc5db51e40424/histogram-rtt/base?time-range=86400"
+curl "http://archive.example.net/esmond/perfsonar/archive/fce0483e51de49aaa7fcf8884d053134/histogram-owdelay/base?time-range=86400"
+curl "http://archive.example.net/esmond/perfsonar/archive/fce0483e51de49aaa7fcf8884d053134/histogram-owdelay/aggregations/86400"
+curl "http://archive.example.net/esmond/perfsonar/archive/fce0483e51de49aaa7fcf8884d053134/histogram-owdelay/statistics/0"
+
+#Querying Packet Loss
+curl "http://archive.example.net/esmond/perfsonar/archive/fce0483e51de49aaa7fcf8884d053134/packet-loss-rate/base"
+
+#Querying Packet Traces
+curl http://archive.example.net/esmond/perfsonar/archive/641860b2004c46a7b21fe26e5ffea9af/packet-trace/base?time-range=600
+
+#Querying Subinterval Data
+curl "http://archive.example.net/esmond/perfsonar/archive/f6b732e9f351487a96126f0c25e5e546/packet-retransmits-subintervals/base?time-range=86400"
