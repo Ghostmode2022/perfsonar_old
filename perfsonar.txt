@@ -2,4 +2,5 @@ sudo apt install curl
 Program flow:
 perfsonar.sh
 preprocess.py (will be called automatically from perfsonar.sh)
+start_perf_get_throughput.sh
 perf_get_throughput.sh
