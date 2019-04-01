@@ -1,6 +1,7 @@
 sudo apt install curl
 easy_install sls-client
 esmond API Reference - http://docs.perfsonar.net/esmond_api_rest.html
+Link for the live list of perfSONAR nodes: <http://stats.es.net/ServicesDirectory/>
 throughput - an average of data packets per second - bits/s.
 event types - "packet-retransmits", "throughput", "failures", "throughput-subintervals"
 the "archive.example.net" is said to be measurement agent which can be the source, destination or a third-party host depending on the tool(event type)
