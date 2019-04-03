@@ -1,0 +1,56 @@
+North America	Arizona	Arizona State University	206.207.50.6
+North America	Arkansas	University of Arkansas	144.30.235.11
+North America	California	U.C.Davis	128.120.80.78
+North America	Colorado	UCCS	128.198.0.46
+North America	Idaho	Northwest Knowledge Network	129.101.249.110
+North America	Indiana	Purdue University	128.211.143.3
+North America	Kansas	Oak Ridge National Lab	192.188.182.72
+North America	Mississippi	Mississippi State University	130.18.0.31
+North America	Montana	Montana State University	153.90.8.7
+North America	Nebraska	University of Nebraska	129.93.183.249
+North America	Nevada	University of Nevada, Reno	134.197.11.250
+North America	New Hampshire	Dartmouth College 	129.170.232.133
+North America	New York	University at Buffalo	128.205.251.7
+North America	Ohio	University of Cincinnati	198.30.88.2
+North America	Oklahoma	Langston University	164.58.29.121
+North America	Oregon	NERO Network	207.98.67.107
+North America	Pennsylvania	Pittsburgh Supercomputing Center 	128.182.112.186
+North America	South Dakota	South Dakota State University 	137.216.132.51
+North America	Texas	Texas State University	147.26.27.86
+North America	Utah	Brigham Young University	128.187.49.12
+North America	Washington	Pacific Northwest Gigapop	209.124.178.137
+North America	Wyoming	University of Wyoming	198.59.193.13
+			
+Australia	Australia	QUT	131.181.68.38
+Australia	Australia	National Computational Infrastructure 	192.43.239.254
+Australia	Islands near Australia	The University of the South Pacific	144.120.143.250
+Australia	Islands near Australia	The University of the South Pacific	168.123.136.163
+Australia	Islands near Australia	University of Guam	168.123.136.163
+			
+South America	Argentina	Observatorio Pierre Auger	168.96.148.1
+South America	Brazil	RNP	200.143.193.141
+South America	Brazil	Centro Brasileiro de Pesquisas Fisicas	152.84.101.141
+South America	Chile	EELA-UTFSM	146.83.90.6
+South America	Ecuador	CEDIA	143.255.248.136
+			
+Asia	India	National Knowledge Network 	14.139.5.210
+Asia	Pakistan 	NCP	121.52.148.34
+Asia	China	Kansas State University	164.113.66.10
+Asia	Thailand	BKNIX Co.,Ltd.	203.159.70.162
+Asia	Japan	Science Information Network - SINET 	150.100.208.157
+Asia	South Korea	KREONET_Gangreung	134.75.229.194
+			
+Africa	Ghana	2nd WACREN perfSONAR	169.239.249.3
+Africa	Ghana	UCAD	196.1.95.100
+Africa	KENYA	KENYA EDUCATION NETWORK 	197.136.25.1
+Africa	Zimbabwe	MoRENet	41.94.159.134
+Africa	Zambia	Zambia Research Education Network (ZAMREN) 	155.0.3.78
+Africa	Tanzania	DIT	41.93.45.46
+			
+Europe	Porto	FCT | FCCN	193.137.4.71
+Europe	Spain	RedIRIS	192.148.201.132
+Europe	France	LPC-CLFD	134.158.123.184
+Europe	Ireland	HEAnet	193.1.201.141
+Europe	Sweden	NDGF	109.105.124.86
+Europe	Frankfurt	Exoscale	89.145.160.212
+			
