@@ -6,8 +6,8 @@ import sys, os
 import subprocess
 print "This is the name of the script: ", sys.argv[1]
 var = sys.argv[1]
-fileNameI = sys.argv[1]+'.txt'
-fileNameO = sys.argv[1]+'-output.txt'
+fileNameI = '/home/sid/perfsonar/data/'+sys.argv[1]+'/'+sys.argv[1]+'.txt'
+fileNameO = '/home/sid/perfsonar/data/'+sys.argv[1]+'/'+sys.argv[1]+'-output.txt'
 fileI = open(fileNameI, 'r')
 fileO = open(fileNameO, 'w')
 textI = []
@@ -39,4 +39,3 @@ fileO.close()
 cmd = "./perf_get_throughput.sh "+var
 #call the shell script with the argument provided in the previous file to be sent as argument in this step as well.
 os.system(cmd)
-#subprocess.Popen(['bash', 'perf_get_throughput.sh', 'sys.argv[1]'], stdout=subprocess.PIPE)
