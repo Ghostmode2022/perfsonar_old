@@ -23,6 +23,10 @@ perf_get_throughput.sh ip
 	3. Create the directories for storing throughput, packet-loss,  packet-traces, sub-interval data particular to an ip 
 	4. Execute the curl command to get the throughput, packet-loss,  packet-traces, sub-interval data particular to an ip
 	5. Call the process-for-weka.py - preprocess the data for weka recognisable format
+preprocess_rtt.py ip metadata
+	1. Takes the rtt output file which is being generated from the event-type = packet-trace
+	2. processes the data to get the 
+
 process-data-weka.py ip metadata event-type
 	1. calculating the number of datapoints
 	2. preparing the file to be weka recognisable format
